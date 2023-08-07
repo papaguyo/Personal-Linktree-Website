@@ -1,0 +1,20 @@
+.word-by-word-container {
+    direction: ltr; /* Set the direction to left-to-right */
+}
+
+.word-by-word-animation {
+    opacity: 0;
+    animation: typewriterEffect 0.3s steps(30) forwards;
+    
+}
+
+.word-by-word-line {
+    margin-bottom: 1em;
+}
+
+
+@keyframes typewriterEffect {
+    to {
+        opacity: 1;
+    }
+}

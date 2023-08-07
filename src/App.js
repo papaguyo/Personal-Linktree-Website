@@ -1,25 +1,75 @@
-import logo from './logo.svg';
+import React from "react";
+import {View, StyleSheet} from "react-native";
+import {Routes, Route} from "react-router-dom";
+import About from "./pages/About";
+import Title from "./pages/Title";
+import "./styles/styles.css";
 import './App.css';
+import NavBar from "./components/NavBar";
+import '../src/styles/dividerStyles.css'
 
-function App() {
+
+const styles = StyleSheet.create({
+    generalViewStyle: {
+        flex: 1,
+        backgroundColor: '#2A2A2A'
+    },
+    
+    captionStyle: {
+        flex: 1,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '20vh'
+    },
+    
+    linksStyle: {
+        flex: 1,
+        display: "flex",
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '10vh'
+    },
+    
+    textStyle:{
+        flex: 1,
+        display: 'flex',
+        height: '20vh',
+    },
+    
+    buttonTextStyle:{
+        color: "#ffad66"
+    },
+        
+});
+
+
+const App = () => {
+    
+    
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+          <View style={styles.generalViewStyle}>
+              
+              <div style={styles.captionStyle}>
+                  <Routes location="/">
+                      <Route path="/" element={<Title/>} />
+                  </Routes>
+              </div>
+              
+              <NavBar />
+              
+              <div style={styles.textStyle} className="textContainer">
+                  <Routes location="/">
+                      <Route path="/" element={<About/>} />
+                  </Routes>
+              </div>
+              
+          </View>
+      </div>
   );
 }
+
+
 
 export default App;
