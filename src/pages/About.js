@@ -6,15 +6,15 @@ import WordByWord from "../components/wordByWord";
 const styles = StyleSheet.create({
     container: {
         display: 'flex',
-        height: '20vh',
-        color: "#CACACA"
+        // height: '8rem',
+        color: "#CACACA",
     },
     
     textStyle:{
         fontFamily: "JetBrains Mono",
         fontSize: '16px',
         textAlign: 'left',
-        color: "#ffad66"
+        color: "#ff9d49"
     }
 });
 

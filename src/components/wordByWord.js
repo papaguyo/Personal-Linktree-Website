@@ -13,7 +13,7 @@ const WordByWordAnimation = ({ text }) => {
             timer = setTimeout(() => {
                 setCurrentText((prevText) => prevText + text[currentIndex]);
                 setCurrentIndex((prevIndex) => prevIndex + 1);
-            }, 15); // Adjust the delay (in milliseconds) between each character
+            }, 13); // Adjust the delay (in milliseconds) between each character
         }
 
         return () => {

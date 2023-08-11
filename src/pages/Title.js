@@ -1,23 +1,14 @@
 import React from "react";
-import {Text, StyleSheet} from 'react-native';
+
+import GIRO_GIF from '../assets/GIRO-GIF-NEW.gif'
+
+import '../styles/TitleStyle.css'
 
 
-const styles = StyleSheet.create({
-    container: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '20vh',
-        color: "#ffad66"
-    }
-});
-
-function Title() {
+const Title = () => {
     return(
-        <div style={styles.container}>
-            <h1>
-                GIRO
-            </h1>
+        <div className="image-container">
+            <img src={GIRO_GIF} alt="my-gif"/>
         </div>
     );
 }

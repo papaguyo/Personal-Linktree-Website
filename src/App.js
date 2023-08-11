@@ -7,6 +7,7 @@ import "./styles/styles.css";
 import './App.css';
 import NavBar from "./components/NavBar";
 import '../src/styles/dividerStyles.css'
+import SecondNavBar from "./components/SecondNavBar";
 
 
 const styles = StyleSheet.create({
@@ -46,30 +47,32 @@ const styles = StyleSheet.create({
 
 const App = () => {
     
-    
-  return (
-      <div className="App">
-          <View style={styles.generalViewStyle}>
-              
-              <div style={styles.captionStyle}>
-                  <Routes location="/">
-                      <Route path="/" element={<Title/>} />
-                  </Routes>
-              </div>
-              
-              <NavBar />
-              
-              <div style={styles.textStyle} className="textContainer">
-                  <Routes location="/">
-                      <Route path="/" element={<About/>} />
-                  </Routes>
-              </div>
-              
-          </View>
-      </div>
-  );
+    return (
+        <div className="App">
+            <View style={styles.generalViewStyle}>
+                  
+                <div style={styles.captionStyle}>
+                    <Routes location="/">
+                        <Route path="/" element={<Title/>} />
+                    </Routes>
+                </div>
+
+                <div style={styles.textStyle} className="textContainer">
+                    <Routes location="/">
+                        <Route path="/" element={<About/>} />
+                    </Routes>
+                </div>
+                
+                <div>
+                    <SecondNavBar/>    
+                </div>
+                
+                  
+                {/*<NavBar />*/}
+                  
+            </View>
+        </div>
+    );
 }
-
-
 
 export default App;

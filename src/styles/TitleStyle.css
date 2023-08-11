@@ -1,0 +1,15 @@
+.image-container
+{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 0.55rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img
+{
+    width: 12rem;
+    object-fit: fill;
+}
