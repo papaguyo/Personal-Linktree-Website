@@ -5,6 +5,8 @@ import './fonts/JetBrainsMono-Regular.woff2';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import SwDev from "./swDev";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +16,10 @@ root.render(
       </Router>
   </React.StrictMode>
 );
+
+SwDev();
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

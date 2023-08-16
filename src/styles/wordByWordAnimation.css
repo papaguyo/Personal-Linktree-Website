@@ -5,7 +5,6 @@
 .word-by-word-animation {
     opacity: 0;
     animation: typewriterEffect 0.3s steps(30) forwards;
-    
 }
 
 .word-by-word-line {

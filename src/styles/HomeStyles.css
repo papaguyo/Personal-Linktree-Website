@@ -1,0 +1,9 @@
+.home-container
+{
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: #ff9d49;
+}
+

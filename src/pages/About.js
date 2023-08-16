@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
     },
     
     textStyle:{
-        fontFamily: "JetBrains Mono",
+        fontFamily: 'JetBrains Mono',
         fontSize: '16px',
         textAlign: 'left',
         color: "#ff9d49"

@@ -25,11 +25,10 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 3rem;
     background: transparent;
     text-decoration: none;
     font-weight: 600;
-    margin: 0.5rem;
+    margin: 0.4rem;
     border-radius: 0.5rem;
     transition: 0.2s;
     border: 1px solid #ff9d49;
@@ -48,6 +47,18 @@
 
 .container .link .icon3
 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.container .link .icon4
+{
     margin-top: 0.18rem;
-    margin-right: 0.25rem;
+    margin-right: 0.35rem;
+}
+
+.middle
+{
+    margin-left: auto;
+    margin-right: auto;
 }

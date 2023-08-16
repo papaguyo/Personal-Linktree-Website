@@ -1,0 +1,110 @@
+.popup
+{
+    position: fixed;
+    bottom: -8rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*z-index: 999;*/
+}
+
+.popup-inner
+{
+    position: relative;
+    padding: 2rem;
+    width: 100%;
+    /*height: 80%;*/
+    max-width: 40rem;
+    background-color: #F1F1F1;
+    border-radius: 0.5rem;
+}
+
+
+
+.popup-inner .close-btn
+{
+    padding: 3px 3px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #2A2A2A;
+    background: transparent;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.popup-inner .close-btn:hover
+{
+    background-color: #DEDEDE;
+}
+
+
+.share-title
+{
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    color: #2A2A2A;
+}
+
+
+.links-container
+{
+    position: relative;
+    top: 45%;
+    padding: 0 1rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links-container .link
+{
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: transparent;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0.4rem;
+    border-radius: 0.5rem;
+    transition: 0.2s;
+    border: 1px solid #DEDEDE;
+    color: #2A2A2A;
+}
+
+
+.links-container .link:hover
+{
+    background-color: #DEDEDE;
+}
+
+
+.icon6
+{
+    margin-top: 0.2rem;
+}
+
+.icon7
+{
+    margin-top: 0.2rem;
+    transform: rotateX(180deg);
+}
+
+.middle-content
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+

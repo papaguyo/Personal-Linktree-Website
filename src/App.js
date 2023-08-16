@@ -5,9 +5,12 @@ import About from "./pages/About";
 import Title from "./pages/Title";
 import "./styles/styles.css";
 import './App.css';
-import NavBar from "./components/NavBar";
 import '../src/styles/dividerStyles.css'
 import SecondNavBar from "./components/SecondNavBar";
+import Home from "./pages/Home";
+import SharePopup from "./components/SharePopup";
+import {useState} from "react";
+import ShareIcon from '@rsuite/icons/legacy/Share'
 
 
 const styles = StyleSheet.create({
@@ -32,12 +35,6 @@ const styles = StyleSheet.create({
         height: '10vh'
     },
     
-    textStyle:{
-        flex: 1,
-        display: 'flex',
-        height: '20vh',
-    },
-    
     buttonTextStyle:{
         color: "#ffad66"
     },
@@ -47,17 +44,25 @@ const styles = StyleSheet.create({
 
 const App = () => {
     
+    const [buttonPopup, setButtonPopup] = useState(false)
+    
     return (
         <div className="App">
             <View style={styles.generalViewStyle}>
-                  
+                
+                <div className="second-button-container">
+                    <button className="share-button" onClick={() => setButtonPopup(true)}>
+                        <ShareIcon className="icon5"/>
+                    </button>
+                </div>
+                
                 <div style={styles.captionStyle}>
                     <Routes location="/">
                         <Route path="/" element={<Title/>} />
                     </Routes>
                 </div>
 
-                <div style={styles.textStyle} className="textContainer">
+                <div className="textContainer">
                     <Routes location="/">
                         <Route path="/" element={<About/>} />
                     </Routes>
@@ -66,10 +71,19 @@ const App = () => {
                 <div>
                     <SecondNavBar/>    
                 </div>
+
+
+                <div>
+                    <Routes location="/">
+                        <Route path="/" element={<Home/>} />
+                    </Routes>
+                </div>
                 
-                  
-                {/*<NavBar />*/}
-                  
+                <div>
+                    
+                </div>
+                <SharePopup trigger={buttonPopup} setTrigger={setButtonPopup}/>
+                
             </View>
         </div>
     );
