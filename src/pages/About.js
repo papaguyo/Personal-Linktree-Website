@@ -6,7 +6,6 @@ import WordByWord from "../components/wordByWord";
 const styles = StyleSheet.create({
     container: {
         display: 'flex',
-        // height: '8rem',
         color: "#CACACA",
     },
     

@@ -7,14 +7,16 @@ import WhatsApp from "@rsuite/icons/legacy/Whatsapp"
 import NextArrow from "@rsuite/icons/legacy/PageNext"
 import EmailIcon from '@rsuite/icons/Email'
 import CopyIcon from '@rsuite/icons/Copy'
-import LinkIcon from '@rsuite/icons/legacy/Link'
 
 
 
 const SharePopup = (props) => {
     
+    //Reference to the popup menu.
     const popupRef = useRef();
     
+    
+    //Close popup when clicking outside of it effect.
     useEffect(() => {
         let handler = (e) => {
             if(popupRef.current && !popupRef.current.contains(e.target)){
@@ -28,6 +30,7 @@ const SharePopup = (props) => {
     });
     
     
+    // Clipboard link copy
     const copyLink = () => {
         const currentURL = window.location.href;
         const textArea = document.createElement('textarea');
@@ -39,6 +42,7 @@ const SharePopup = (props) => {
     }
     
     
+    //Passing button trigger property as an argument. 
     return(props.trigger) ? (
         <motion.div animate={{y: -100, opacity: 1}} initial={{opacity: 0}} className="popup">
             <div className="popup-inner" ref={popupRef}>
